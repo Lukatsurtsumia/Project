@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+li, a, button{
+
+    font-family: 'Irish Grover', cursive;
+    font-size: 24px;
+    font-weight: 450;
+    color: rgb(170, 25, 25);
+    text-decoration: none;
+    margin: 18px;
+    
+}
+header{
+    background-color: rgb(255, 131, 131);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    height: 80px;
+}
+.logo{
+    cursor: pointer;
+    height: 110px;
+    width: 120px;
+    margin: 1px;
+    margin-left: 100px;
+}
+
+.menu-bar li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+.menu-bar li a{
+    transition: all 0.3s ease 0s;
+}
+.menu-bar a:hover{
+    color: rgb(114, 199, 45);
+}
+button{
+    padding: 10px 25px;
+    background-color: rgb(245, 132, 132);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border-radius: 50px;
+    margin-right: 10px;
+
+}
+button:hover{
+    background-color: rgb(114, 199, 45);
+}
+
+
+
+.subMenu2{
+    display: none;
+}
+
+.menu-bar ul li:hover .subMenu2{
+    
+    display: block;
+    position: absolute;
+    background: rgb(245, 132, 132);
+    
+    
+}
+.menu-bar ul li:hover .subMenu2 ul{
+    display: block;
+}
+.menu-bar ul li:hover .subMenu2 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    margin-top: 2px;
+}

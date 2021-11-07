@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+
+}
+body{
+    width: 100%;
+    
+    background-image: url(bg1.jpg);
+    background-size: 100%;
+    background-position:center;
+    
+}
+
+li, a, button{
+
+    font-family: 'Irish Grover', cursive;
+    font-size: 30px;
+    font-weight: 450;
+    color: rgb(236, 67, 67);
+    text-decoration: none;
+    margin: 18px;
+   
+    
+}
+
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    height: 80px;
+    
+}
+.logo{
+    cursor: pointer;
+    height: 130px;
+    width: 130px;
+    margin: 1px;
+    margin-left: 100px;
+}
+
+.menu-bar li{
+    display: inline-block;
+    padding: 0px 3px;
+    
+}
+.menu-bar li a{
+    transition: all 0.3s ease 0s;
+}
+.menu-bar a:hover{
+    color: #cac70c;
+}
+button{
+    padding: 10px 25px;
+    background-color: rgb(245, 132, 132);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border-radius: 50px;
+    margin-right: 20px;
+
+}
+button:hover{
+    background-color: #cac70c;
+}
+
+
+
+.subMenu2{
+    display: none;
+    z-index: 1;
+}
+
+
+.menu-bar ul li:hover .subMenu2 {
+    width: 150px;
+    padding: 0px;
+    display: block;
+    position: absolute;
+    bottom: 3px dotted #fff;
+    background: transparent;
+    margin-top: 2px;
+    
+    align-items: center;
+}
+
+
+.subMenu3{
+    display: none;
+    z-index: 1;
+}
+.menu-bar ul li:hover .subMenu3{
+    display: block;
+    position: absolute;
+    width: 300px;
+    font-size: 8px;
+    padding:0;
+    
+    margin-top: 2px;
+}
+
+/* SlideShow */
+
+.slidershow{
+    width: 85%;
+    height: 880px;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 30px;
+    
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+    
+}
+
+.slideNav{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(50%);
+    display: flex;
+  
+    
+}
+
+
+.bar{
+    width: 70px;
+    height: 15px;
+    border: solid 2px white;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+
+   
+}
+
+
+.bar:hover{
+    background: #ffffff;
+}
+
+input[name="p"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide{
+    width: 20%;
+    transition: 0.6s;
+    
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+#p1:checked ~ .s1{
+    margin-left: 0 ;
+}
+#p2:checked ~ .s2{
+    margin-left: -20% ;
+}
+#p3:checked ~ .s3{
+    margin-left: -40% ;
+}
+#p4:checked ~ .s4{
+    margin-left: -60% ;
+}
+/* ------------------------------------------------- */
+.clearfix {
+    clear: both;
+}
+
+.burgerContainer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    margin-top: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+.pizzaContainer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    margin-top: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+.shop-cart{
+    float: right;
+    margin-left:95%;
+    font-size: 100px;
+    color: rgb(236, 67, 67);
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 70px 0px;
+  }
+  .card{
+  	flex: 1;
+  	margin: 10px;
+  	border: solid 1px black;
+  	box-shadow: 2px 2px 6px;
+  }
+  .card img {
+   max-width: 100%;
+  }
+  
+  .card .text{
+  	padding: 0 20px 20px;
+  }
+
+  .card .text > button{
+  	background-color: gray;
+  	color: black;
+  	padding: 8px;
+  	margin-left: 100px; 
+  }
+
+h1{
+	text-align: center;
+    font-size: 150px;
+    font-family:'Irish Grover', cursive;
+    margin-top: 1000px;
+    color:rgb(236, 67, 67) ;
+}
+h2{
+    text-align: center;
+    
+    color: rgb(236, 67, 67);
+    font-family: 'Irish Grover', cursive;
+    font-size: 70px;
+    margin-top: 200px;
+}
+h3{
+    font-family: 'Irish Grover', cursive;
+    font-size: 21px;
+    color: black;
+    
+}
+p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.pizza{
+   margin-left: 42%;
+    
+    color: rgb(236, 67, 67);
+    font-family: 'Irish Grover', cursive;
+    font-size: 70px;
+    margin-top: 200px;
+}
+/* Shop Cart ----------------------------*/
+
+.small-container{
+    display:flex;
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.single-product{
+    margin-top: 80px;
+    align-items: left;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-around;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;   
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.col-2{
+    flex: 50%;
+    min-width: 300px;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin-top: 20px;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+button a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+h6{
+    font-family: 'Irish Grover', cursive;
+    font-size: 36px;
+    color:rgb(236, 67, 67);
+
+}
+
+
+
+/* -------------------------------------------------- */
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(196, 111, 111, 0.7);
+    z-index: 1;
+    display: none;
+}
+ .popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: rgb(231, 127, 127);
+    width: 450px;
+    height: 280px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+} 
+.popup .close-btn{
+    position: absolute;
+    right: 20px;
+    top:20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: rgb(255, 250, 250);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius:50%;
+    cursor: pointer;
+
+}
+.popup.active .overlay{
+    display: block;
+   
+}
+.popup.active .content{
+    transition: all 30ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+h4{
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'Irish Grover', cursive;
+    margin-bottom: 15px;
+    color: rgb(165, 37, 37);
+    
+}
+/* Sign up Box ------------------------------------------------------------*/
+.signup-box{
+    width: 400px;
+    height: 900px;
+    margin:auto;
+    border-radius:3px;
+}
+
+h5{
+    text-align: center;
+    padding-top:15px;
+    font-size: 50px;
+    font-family: 'Irish Grover', cursive;
+    color: rgb(236, 67, 67);
+}
+h4{
+    text-align: center;
+}
+form{
+    width: 300px;
+    margin-left: 20px;
+}
+form label{
+    display: flex;
+    margin: 3px;
+    font-size: 18px;
+}
+form input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid black;
+    border-radius: 6px;
+    outline: none;
+}
+input[type="button"]{
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: rgb(236, 67, 67);
+    font-size: 18px;
+    cursor: pointer;
+}
+.log{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 19px;
+}
+
+/* Footer-------------- */
+footer{
+  
+    width: 100%;
+    height: auto;
+    background:rgb(90, 81, 81) ;
+    padding: 5px;
+    font-family: 'Irish Grover', cursive;
+    margin-top: 550px;
+    
+}
+.finish h3{
+    color: black;
+    font-size: 30px;
+    align-items: center;
+    text-transform: capitalize;
+    margin-left: 750px;
+}
+
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+  
+}
+.social li{
+    
+    margin-left: 100px;
+    
+}
+.social a{
+    text-decoration: none;
+}
+
+
+
+@media all and (max-width: 480px){
+	header{
+		display: block;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+     
+    }
+    
+}

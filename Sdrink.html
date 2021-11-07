@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <header>
+        
+        <img class="logo" src="log.png" alt="logo">
+        <nav class="menu-bar" >
+
+
+
+            <ul>
+                <li class="active"><i class="fas fa-home"></i><a href="inde.html">Home</a>
+                </li>
+
+               
+                <li><i class="fas fa-utensils"></i><a href="#here">Menu</a>
+                        <div class="subMenu2">
+                            <ul>
+                                <li><a href="#here1">Burger</a></li>
+                                
+                               
+                                <li><a href="#here2">Pizza</a></li>
+                                <li><a href="#here4">Salads</a></li>
+                                
+                                <li><a href="#here3">Drinks</a></li>
+                                <li><a href="#here5">Desserts</a></li>
+                            </ul>
+                        </div>
+                </li>
+
+                    
+                <li><a href="#" onclick="togglePopup();">About</a><i class="fas fa-exclamation-circle"></i></li>
+                
+              
+                <li><a href="#">Contact</a><i class="fas fa-phone"></i>
+                    <div class="subMenu3">
+                        <ul>
+                            <li><a href="#"></a><h3>+(599) 111 222 333</h3</li>
+                        </ul>
+                    </div>
+                </li>
+                
+            </ul>
+        </nav>
+
+            <a  class="button" href="regFile.html"><button>Log In</button></a>
+        
+    </header>
+
+    <!-- <body>------------------------------- -->
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="dr1.jpg" id="ProductImg">
+    
+                    <div class="small-img-row">
+    
+                        <div class="small-img-col">
+                            <img src="dr2.jpg" class="small-img" >
+                        </div>
+    
+                        <div class="small-img-col">
+                            <img src="dr3.jpg" class="small-img">
+                        </div>
+    
+                        <div class="small-img-col">
+                            <img src="dr4.jpg" class="small-img" >
+                        </div>
+                        <div class="small-img-col">
+                            <img src="dr5.jpg" class="small-img" >
+                        </div>
+                    </div>      
+                 </div>
+    
+                    <div class="col-2">
+                        
+                        <h6>Drinks For Fresh</h6>
+                        <h6>5$</h6>
+                        <select>
+                            <option >Select Sixze</option>
+                            <option>Small</option>
+                            <option >Standart</option>
+                            <option>Max</option>
+                        </select>
+                        <input type="number" value="1">
+                        <a href="" class="btn">Add to Cart</a>
+                        <h3>Product Detail!!!</h3>
+                        <br>
+                        <p>It is a long established fact that a reader will be distracted by the 
+                            readable content of a page when looking at its layout. The point of using
+                             Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
+                             as opposed to using 'Content here, content here', making it look like readabl
+                             e English. Many desktop publishing packages and web page editors now use Lorem</p>
+    
+                </div>
+            </div>
+        </div>
+     <script>
+         var ProductImg =document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+    
+    SmallImg[0].onclick = function()
+    {
+        ProductImg.src= SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function()
+    {
+        ProductImg.src= SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function()
+    {
+        ProductImg.src= SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function()
+    {
+        ProductImg.src= SmallImg[3].src;
+    }
+    
+    
+    
+    
+     </script>
+</body>
+</html>
