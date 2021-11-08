@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
    
-
 }
 body{
     width: 100%;
@@ -105,18 +104,18 @@ button:hover{
     margin-top: 2px;
 }
 
-/* SlideShow */
+/* SlideShow-------------------------------------- */
 
 .slidershow{
-    width: 1700px;
-    height: 850px;
+    width: 1400px;
+    height: 800px;
     overflow: hidden;
 }
 .middle{
     position: absolute;
     margin-top: 30px;
     
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
    
